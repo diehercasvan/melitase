@@ -1,0 +1,260 @@
+#iPizarra {
+    z-index: 2;
+    border: none;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#main-nav {
+  z-index: 1;
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  -webkit-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+  display: none;
+}
+
+#main-nav.show { display: block; background: #ffffff; z-index: 8; }
+
+#nav-button {
+    z-index: 18;
+  background: #EA222F;
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+  top: 1em;
+  left: 1em;
+  position: absolute;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#nav-button .fa {
+  position: absolute;
+  top: 0;
+  left: 0.2em;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
+  width: 1em;
+  height: 1em;
+  font-size: 1em;
+  opacity: 1;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+
+#nav-button:hover {
+  /*cursor: pointer;*/
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.3);
+  color: #222;
+}
+
+#nav-button.width {
+  /*width: 80em;
+  height: 80em;
+  top: -37.5em;
+  left: -37.5em;
+  box-shadow: none;*/
+  background: rgba(255, 255, 255, 0);
+  color:#000; 
+}
+
+#nav-button.width:before {
+  content: '';
+  display: block;
+  width: 0.4em;
+  height: 0.4em;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  /*-webkit-animation: color 0.3s linear;
+  animation: color 0.3s linear;*/
+}
+ @-webkit-keyframes 
+color {  0% {
+ box-shadow: 0;
+}
+ 30% {
+ box-shadow: 0 0 10px 25px rgba(12, 121, 137, 0.5);
+}
+}
+ @keyframes 
+color {  0% {
+ box-shadow: 0;
+}
+ 30% {
+ box-shadow: 0 0 10px 25px rgba(12, 121, 137, 0.5);
+}
+}
+
+
+#nav-list {
+  position: absolute;
+  top: 20px;
+  color: #9797A5;
+  margin-left: 70px;
+  margin: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  width: 80%;
+  height: 90%;
+  z-index: 4;
+  padding: 0;
+}
+
+#nav-list ul li {
+    color: #9797A5;
+    cursor: pointer;
+}
+
+#nav-list a {
+  cursor: pointer; 
+  color: #9797A5;
+  text-decoration: none;
+  /*font-size: 0.9em;*/
+  display: block;
+  width: 100%;
+  /*padding: 1.2em 0;*/
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+#nav-list a:hover { color: #9797A5; cursor: pointer;  }
+
+#nav-list.nav-show { opacity: 1; height: 89%; line-height: 25px; color: #9797A5; }
+
+#content {
+  background: #efefef;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: background 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out;
+}
+
+#content header {
+  height: 15em;
+  background: #44769a;
+  width: 100%;
+  padding: 1.7em 0 0 0;
+}
+
+#content header h1 {
+  color: #fff;
+  letter-spacing: 0.03em;
+  font-size: 1.4em;
+  width: 75%;
+  margin: 0 auto;
+}
+
+#content section {
+  height: 60em;
+  background: #fff;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+  width: 75%;
+  margin: -10em auto 0;
+}
+
+#cover {
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#cover.display {
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  visibility: visible;
+}
+
+a {
+    cursor: pointer;
+}
+
+#cont_img {
+    height: 120px;
+}
+
+#imagen {
+    height: 120px;
+    width: 300px;
+}
+
+.mostar {
+    visibility: hidden;
+}
+
+.esconder {
+    visibility: visible;
+    z-index: 100;
+}
+
+#cont_lista {
+    position: absolute;
+    width: 100%;
+    height: 83%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.esconderList {
+    height: 83% !important;
+    visibility: hidden;
+}
+
+.mostrarList {
+    height: 83% !important;
+    visibility: visible;
+}
+
+.cerrar {
+    cursor: pointer;
+    position: relative;
+    top: -40px;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 200px;
+    font-family: 'Roboto Light';
+    font-size: 16px;
+    left: 70px;
+}
+
+#img_patologia {
+    cursor: default;
+    position: relative;
+    /*left: -70px;*/
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: 10px;
+    padding: 0;
+}
+
+#melitase2-an-anim {
+    transform: scale(0.8,0.9) !important;
+    -moz-transform: scale(0.8,0.9) !important;
+    -webkit-transform: scale(0.8,0.9) !important;
+}

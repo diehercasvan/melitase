@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{
+	margin:0;
+}
+canvas {
+	/*border: 1px solid gray; Si requiere bordes*/
+	position: absolute;
+	cursor: crosshair;
+	background:transpatenr !important;
+	left:0px;
+	bottom:0px;
+	top: 0;
+    right: 0;
+	
+}
+#clear{
+    position: absolute;
+    top: 18px;
+    left: 155px;
+	cursor:pointer;
+	float:right;
+}
+#draft{
+	cursor:pointer;
+}
+
+.BtnColors{
+	width:50px;
+	height:20px;
+	background:#24A1C6;
+	cursor:pointer;
+	border:5px #CCCCCC solid;
+			
+	}
+#selecColor{
+	width:300px;
+	height:40px;
+	/*border:solid 1px #24A1C6;*/
+	margin:auto;
+	/*box-shadow:0px 0px 5px #666666;*/	
+	/*border-radius:5px;*/
+	padding:2px;
+	display:none;
+	margin-top:5px;
+	background:transparent;	
+}
+table{
+	width:auto;
+	height:auto;
+	text-align:center;
+	
+}
+td{
+	width:30px;
+	/*border:solid 1px #666666;*/
+	height:30px;
+	cursor:pointer;
+	border-radius:5px;
+		
+}
+
+
+#slide{	
+	width:140px;
+	height:50px;
+	/*background:url(../img/fondopizarra_basev.png);*/
+	left: 100px;
+	top: 100px;
+	float:right;	
+			
+}
+#tabla{
+	/*width:140px;
+	height:70px;
+	background:transparent !important;
+	float:left;*/
+    padding: 2px;
+}
+#menu{
+	width:300px;
+	height:50px;
+	padding:2px;
+	text-align:center;
+	background:transparent !important;
+	position:absolute;
+	z-index:2;
+    left: 190px;
+    top: 725px;
+}
+
+#boton {
+	left:280px;
+	position: absolute;
+	top:623px;
+}
+
